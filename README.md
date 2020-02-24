@@ -1,1 +1,1 @@
-# kittyAPI
+# kitty-api

@@ -11,17 +11,14 @@ const KittySchema = new mongoose.Schema({
   },
   isGif: {
     type: Boolean,
-    required: true,
     default: false
   },
   owner: {
     type: String,
-    required: true,
     default: "unkown"
   },
   sourceUrl: {
     type: String,
-    required: true,
     default: "unkown"
   },
   dateAdded: {

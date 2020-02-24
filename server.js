@@ -18,6 +18,9 @@ app.get("/", (req, res) => {
   res.send("API running.");
 });
 
+// API routes
+app.use("/api/kitties", require("./routes/api/kitties"));
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {

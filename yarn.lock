@@ -608,6 +608,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"express-validator@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "express-validator@npm:6.4.0"
+  dependencies:
+    lodash: ^4.17.15
+    validator: ^12.1.0
+  checksum: 80a12899932d127052ac2f2b62729c6115a6f7de62c773cb5f01b9060b63978499e38f4cda708a224e9dbd57a70f632d94b704a10391d6627b15030e894125fb
+  languageName: node
+  linkType: hard
+
 "express@npm:^4.17.1":
   version: 4.17.1
   resolution: "express@npm:4.17.1"
@@ -1195,6 +1205,7 @@ fsevents@~2.1.2:
   dependencies:
     config: ^3.2.6
     express: ^4.17.1
+    express-validator: ^6.4.0
     mongoose: ^5.9.2
     nodemon: ^2.0.2
   languageName: unknown
@@ -1206,6 +1217,13 @@ fsevents@~2.1.2:
   dependencies:
     package-json: ^4.0.0
   checksum: 378fac1ef757cbede0303ff1df2afef9eeb3ee0c8a153ead49af17a4a93e2cbe02408101d46b007f7db72cbf77cbe6c3099e16a1dc7a53d7b4e251928c7f8a55
+  languageName: node
+  linkType: hard
+
+"lodash@npm:^4.17.15":
+  version: 4.17.15
+  resolution: "lodash@npm:4.17.15"
+  checksum: b018ec8d4c95f14a4b57005a247eca1bc25639322939471a1958d3bc721b4f18e90edb6ea564854593a8bc1f94956a0352cf0cd372991b98c42d61c0cd11e5a3
   languageName: node
   linkType: hard
 
@@ -2284,6 +2302,13 @@ fsevents@~2.1.2:
   bin:
     uuid: ./bin/uuid
   checksum: 28cbce9f7d0d63229a0a1926bac76d72c22ff21009e5581477c5dad59e00a52ea48f487048476c85fd9dddcd7a29216475d33e4da851ccf8fe04baafe2957c74
+  languageName: node
+  linkType: hard
+
+"validator@npm:^12.1.0":
+  version: 12.2.0
+  resolution: "validator@npm:12.2.0"
+  checksum: 56e3ac23e4c59bb017646c64baa15e5044d48ccb3d9430ebce14f572ac7591e6109b94e732e967174574f778a9ce836435aed0967270b20d7a364f57144c4fd1
   languageName: node
   linkType: hard
 

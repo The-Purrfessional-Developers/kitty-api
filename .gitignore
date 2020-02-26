@@ -2,3 +2,4 @@
 .pnp.js
 
 config/default.json
+config/builder.json

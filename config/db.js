@@ -32,4 +32,21 @@ const disconnectDB = async () => {
   }
 };
 
-module.exports = {connectDB, disconnectDB};
+const saveDataToDB = async (Model, data) => {
+  try {
+
+    //Connect Database
+    await connectDB();
+
+    //Insert kitties into database using Kitty data schemea
+    await Model.insertMany(data);
+
+    //Disconnect MongoDB server
+    await disconnectDB();
+
+  } catch (err) {
+    console.error(err.message);
+  };
+};
+
+module.exports = {connectDB, disconnectDB, saveDataToDB};

@@ -2,7 +2,7 @@
   "name": "kitty-api",
   "scripts": {
     "server": "nodemon server",
-    "migration": "node migration"
+    "migrate": "node ./migration/migration"
   },
   "dependencies": {
     "config": "^3.2.6",

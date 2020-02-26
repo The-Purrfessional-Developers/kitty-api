@@ -1,5 +1,5 @@
-const {connectDB, disconnectDB} = require("./config/db");
-const Kitty = require("./models/Kitty");
+const {connectDB, disconnectDB} = require("../config/db");
+const Kitty = require("../models/Kitty");
 const kitties = require("./kitties");
 
 const kittiesToSave = kitties.test;

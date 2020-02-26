@@ -11,6 +11,7 @@ const saveKitties = async (kittiesToSave) => {
     //Connect Database
     await connectDB();
 
+    //Insert kitties into database using Kitty data schemea
     await Kitty.insertMany(kittiesToSave);
 
     //Disconnect MongoDB server

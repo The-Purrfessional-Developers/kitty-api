@@ -2,5 +2,5 @@
 .pnp.js
 
 config/default.json
-config/builder.json
+config/migration.json
 config/production.json

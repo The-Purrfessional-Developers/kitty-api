@@ -1,18 +1,18 @@
 const {connectDB, disconnectDB} = require("../config/db");
 const Kitty = require("../models/Kitty");
-const kitties = require("./kitties");
+const data = require("./data");
 
-const kittiesToSave = kitties.test;
+const kitties = data.test;
 
 //Creating function that will handle async kitty saving to database
-const saveKitties = async (kittiesToSave) => {
+const saveData = async (kitties) => {
   try {
 
     //Connect Database
     await connectDB();
 
     //Insert kitties into database using Kitty data schemea
-    await Kitty.insertMany(kittiesToSave);
+    await Kitty.insertMany(kitties);
 
     //Disconnect MongoDB server
     await disconnectDB();
@@ -22,4 +22,4 @@ const saveKitties = async (kittiesToSave) => {
   };
 };
 
-saveKitties(kittiesToSave);
+saveData(kitties);

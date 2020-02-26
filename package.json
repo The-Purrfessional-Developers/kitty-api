@@ -1,5 +1,9 @@
 {
   "name": "kitty-api",
+  "scripts": {
+    "server": "nodemon server",
+    "migration": "node migration"
+  },
   "dependencies": {
     "config": "^3.2.6",
     "express": "^4.17.1",

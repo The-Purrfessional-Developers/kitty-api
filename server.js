@@ -1,5 +1,5 @@
 const express = require("express");
-const connectDB = require("./config/db");
+const {connectDB, disconnectDB} = require("./config/db");
 const config = require("config");
 
 const app = express();

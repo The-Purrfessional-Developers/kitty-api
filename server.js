@@ -1,5 +1,6 @@
 const express = require("express");
 const connectDB = require("./config/db");
+const config = require("config");
 
 const app = express();
 
@@ -21,7 +22,7 @@ app.get("/", (req, res) => {
 // API routes
 app.use("/api/kitties", require("./routes/api/kitties"));
 
-const PORT = process.env.PORT || 5000;
+const PORT = config.get("PORT");
 
 app.listen(PORT, () => {
   console.log(`Server started on Port ${PORT}`);

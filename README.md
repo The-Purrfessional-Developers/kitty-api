@@ -28,6 +28,10 @@ The contents of these files will be in the following form:
 }
 ```
 
+You will have to provide your own MongoDB Atlas cluster. We would recommend signing up for a free account <a href="cloud.mongodb.com">here</a>.
+
+# What are the ```yarn``` commands?
+
 There are a number of convenient yarn scripts (defined in package.json) which can be used
 
 ## yarn server

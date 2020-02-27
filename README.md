@@ -12,6 +12,19 @@ A validly structured request body would appear as so:
     "key": "validApiSecurityKey"
 }
 ```
+The response body will look something like this:
+```
+{
+    "isGif": false,
+    "owner": "CuteKitty Gallary",
+    "sourceUrl": "https://www.cutekitty.cute",
+    "_id": "123456789",
+    "imageUrl": "https://www.cutekitty.cute/gallery/kitty001",
+    "emotion": "happy",
+    "dateAdded": "2020-02-26T20:11:15.124Z",
+    "__v": 0
+}
+```
 
 # What if I want to use the code?
 The kitty-api repository is a public repository and covered under the MIT open source license. While one can clone the reposity, do not expect it to start up successfully.

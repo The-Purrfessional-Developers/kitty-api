@@ -152,6 +152,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"bcryptjs@npm:^2.4.3":
+  version: 2.4.3
+  resolution: "bcryptjs@npm:2.4.3"
+  checksum: 2ddc44aa220880a967892619445086b85f0b890ccb44b51b6cb994f1df2075c4c14dc0ce076d6d90f8988398ddcd21e81377eb452adeb3cec4dabe24119721be
+  languageName: node
+  linkType: hard
+
 "binary-extensions@npm:^2.0.0":
   version: 2.0.0
   resolution: "binary-extensions@npm:2.0.0"
@@ -1203,6 +1210,7 @@ fsevents@~2.1.2:
   version: 0.0.0-use.local
   resolution: "kitty-api@workspace:."
   dependencies:
+    bcryptjs: ^2.4.3
     config: ^3.2.6
     express: ^4.17.1
     express-validator: ^6.4.0

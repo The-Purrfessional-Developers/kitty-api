@@ -3,9 +3,11 @@
   "scripts": {
     "server": "nodemon server",
     "migrate": "NODE_ENV=migration; node ./migration/migration",
-    "production": "NODE_ENV=production; node server"
+    "production": "NODE_ENV=production; node server",
+    "genKey": "node security/genKey.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "config": "^3.2.6",
     "express": "^4.17.1",
     "express-validator": "^6.4.0",

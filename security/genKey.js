@@ -9,8 +9,7 @@ const genKey = async (keyLength, saltLength) => {
     const salt = await bcrypt.genSalt(saltLength);
 
     //Hashing the plain-text API key with salt
-    const hashedKey = await bcrypt.hash(plainKey, salt);
-    console.log(await bcrypt.compare(plainKey, hashedKey));
+    const hashedKey = await bcrypt.hash(plainKey, salt)
     
     return {plainKey: plainKey, hashedKey: hashedKey};
 };

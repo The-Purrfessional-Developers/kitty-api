@@ -10,7 +10,6 @@ const router = express.Router();
 router.get("/", auth, async (req, res) => {
   try {
     const kitty = await Kitty.findOne({"emotion" : req.body.emotion});
-    console.log(kitty);
     res.json(kitty);
   } catch (err) {
     console.error(err.message);

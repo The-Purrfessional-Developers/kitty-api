@@ -1,15 +1,38 @@
 {
     "test": [{
-        "imageUrl": "https://i.pinimg.com/originals/d7/10/91/d71091b4b4e7d89a3763395cdddd6d75.jpg",
-        "emotion": "happy",
+        "imageUrl": "https://raw.githubusercontent.com/The-Purrfessional-Developers/send-kitties/master/cjtaylor1990/comforting/java_minchi1.jpg",
+        "emotion": "comforting",
         "isGif": "false",
-        "sourceUrl": "https://i.pinimg.com/originals/d7/10/91/d71091b4b4e7d89a3763395cdddd6d75.jpg"
+        "owner": "Azia Ramirez",
+        "sourceUrl": "N/A"
     },
     {
-        "imageUrl": "https://i.pinimg.com/originals/15/2d/8c/152d8c581f8b8cf861e5d014a54ac895.jpg",
+        "imageUrl": "https://raw.githubusercontent.com/The-Purrfessional-Developers/send-kitties/master/cjtaylor1990/happy/latte5.jpg",
+        "emotion": "happy",
+        "isGif": "false",
+        "owner": "Azia Ramirez",
+        "sourceUrl": "N/A"
+    },
+    {
+        "imageUrl": "https://raw.githubusercontent.com/The-Purrfessional-Developers/send-kitties/master/cjtaylor1990/hyper/cinder1.jpg",
         "emotion": "hyper",
         "isGif": "false",
-        "sourceUrl": "https://i.pinimg.com/originals/15/2d/8c/152d8c581f8b8cf861e5d014a54ac895.jpg"
+        "owner": "Azia Ramirea",
+        "sourceUrl": "N/A"
+    },
+    {
+        "imageUrl": "https://raw.githubusercontent.com/The-Purrfessional-Developers/send-kitties/master/cjtaylor1990/mischievous/mischief3.jpg",
+        "emotion": "mischievous",
+        "isGif": "false",
+        "owner": "Azia Ramirea",
+        "sourceUrl": "N/A"
+    },
+    {
+        "imageUrl": "https://raw.githubusercontent.com/The-Purrfessional-Developers/send-kitties/master/cjtaylor1990/tired/minchi1.jpg",
+        "emotion": "tired",
+        "isGif": "false",
+        "owner": "Azia Ramirea",
+        "sourceUrl": "N/A"
     }
     ]
 }

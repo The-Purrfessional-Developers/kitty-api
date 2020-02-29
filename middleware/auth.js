@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 
 module.exports = async function(req, res, next) {
   // Get apiKey from header
-  const key = req.body.key;
+  const key = req.query.key;
 
   //Checking if passes condition
   if (!key) {

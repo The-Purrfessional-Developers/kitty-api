@@ -1215,6 +1215,7 @@ fsevents@~2.1.2:
     express: ^4.17.1
     express-validator: ^6.4.0
     mongoose: ^5.9.2
+    node-fetch: ^2.6.0
     nodemon: ^2.0.2
   languageName: unknown
   linkType: soft
@@ -1457,6 +1458,13 @@ fsevents@~2.1.2:
   version: 0.6.2
   resolution: "negotiator@npm:0.6.2"
   checksum: ba007b54f72a0718de14202b58203641805347db8c805d6edc69d3f369b02dd93f372aa26c90f28de21475e874e372f5de0ef581ab85ed0700a4d43185673832
+  languageName: node
+  linkType: hard
+
+"node-fetch@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "node-fetch@npm:2.6.0"
+  checksum: 62de03bca8db6d39d2ec3baf51a3c7805a7cb1669dcfcfd0f0dc09b891e8673c80e71abaed8969f6f92401130824706e9103350a2bcc961dab629024781f0fd2
   languageName: node
   linkType: hard
 

@@ -9,7 +9,7 @@ const router = express.Router();
 // @access Public
 router.get("/", auth, async (req, res) => {
   try {
-    const kitty = await Kitty.findOne({"emotion" : req.body.emotion});
+    const kitty = await Kitty.findOne({"emotion" : req.query.emotion});
     res.json(kitty);
   } catch (err) {
     console.error(err.message);

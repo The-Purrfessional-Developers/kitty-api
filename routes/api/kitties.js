@@ -9,7 +9,10 @@ const router = express.Router();
 // @access Public
 router.get("/", auth, async (req, res) => {
   try {
-    const kitty = await Kitty.findOne({"emotion" : req.query.emotion});
+    const kitty = await Kitty.aggregate([
+      {$match: {emotion : req.query.emotion}},
+      {$sample: {size: 1}}
+    ]);
     res.json(kitty);
   } catch (err) {
     console.error(err.message);

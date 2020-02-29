@@ -4,7 +4,8 @@
     "server": "nodemon server",
     "migrate": "NODE_ENV=migration; node ./migration/migration",
     "production": "NODE_ENV=production; node server",
-    "genKey": "node security/genKey.js"
+    "genKey": "node security/genKey.js",
+    "example.request": "NODE_ENV=examples; node ./examples/request.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

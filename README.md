@@ -5,13 +5,21 @@ This is a basic API that is made to return URLs to cat pictures based on the use
 # How do I use kitty-api?
 Currently, this is done by passing a valid security key and an emotion via an HTTP GET request . Currently, such a key is not publicly available due to early private testing, though can be provided on request.
 
-A validly structured request body would appear as so:
+Consistent with HTTP standards for GET requests, *emotion* and *key* are to be placed in the URL query. For example, for a standard JavaScript fetch, using the standard try-catch pattern and async/await, we have,
+
 ```
-{
-    "emotion": "happy",
-    "key": "validApiSecurityKey"
-}
+const requestKitty = async (url, key, emotion) => {
+    try {
+        const response = await fetch(
+            `${url}/api/kitties?emotion=${emotion}&key=${key}`
+        );
+        console.log(await response.json());
+    } catch (error) {
+        console.log(error);
+    }
+};
 ```
+
 The response body will look something like this:
 ```
 {
@@ -68,4 +76,7 @@ The output of this operation will look as follows:
 }
 
 ```
+
+## yarn example.request
+This runs the example request script, taking the API key and the URL from *config/examples.json* (not available in public kitty-api repository) and returns the response as a JSON object. Note that this is a NodeJS script, and thus uses node-fetch to send requests.
 

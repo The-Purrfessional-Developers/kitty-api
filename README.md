@@ -76,6 +76,8 @@ The output of this operation will look as follows:
 
 ```
 
-## yarn example.request
-This runs the example request script, taking the API key and the URL from *config/examples.json* (not available in public kitty-api repository) and returns the response as a JSON object. Note that this is a NodeJS script, and thus uses node-fetch to send requests.
+## yarn example
+This runs the example request script, taking the API key and the URL from *config/examples.json* (not available in public kitty-api repository) and returns the response as a JSON object. If an emotion is provided as an argument, it will request using the specified emotion, and if not, it will search with the default value of "happy."
+
+Note that this is a NodeJS script, and thus uses node-fetch to send requests.
 

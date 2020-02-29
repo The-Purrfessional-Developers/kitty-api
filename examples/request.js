@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 
 const domain = config.get("domain");
 const key = config.get("key");
-const emotion = 'tired';
+const emotion = process.argv[2] || "happy";
 
 const requestKitty = async (domain, key, emotion) => {
     try {

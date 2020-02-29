@@ -8,15 +8,14 @@ Currently, this is done by passing a valid security key and an emotion via an HT
 Consistent with HTTP standards for GET requests, *emotion* and *key* are to be placed in the URL query. For example, for a standard JavaScript fetch, using the standard try-catch pattern and async/await, we have,
 
 ```
-const requestKitty = async (url, key, emotion) => {
-    try {
-        const response = await fetch(
-            `${url}/api/kitties?emotion=${emotion}&key=${key}`
-        );
-        console.log(await response.json());
-    } catch (error) {
-        console.log(error);
-    }
+const requestKitty = async (domain, key, emotion) => {
+  try {
+    const url = `${domain}/api/kitties?emotion=${emotion}&key=${key}`;
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    console.log(error);
+  };
 };
 ```
 

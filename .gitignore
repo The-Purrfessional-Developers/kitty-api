@@ -1,5 +1,6 @@
 .yarn
 .pnp.js
+.yarnrc.yml
 
 config/default.json
 config/migration.json

@@ -1,5 +1,6 @@
 const express = require("express");
 const {connectDB} = require("./config/db");
+const startServer = require("./config/startServer");
 const config = require("config");
 
 const app = express();
@@ -24,6 +25,4 @@ app.use("/api/kitties", require("./routes/api/kitties"));
 
 const PORT = config.get("PORT");
 
-app.listen(PORT, () => {
-  console.log(`Server started on Port ${PORT}`);
-});
+startServer(app, config, PORT);

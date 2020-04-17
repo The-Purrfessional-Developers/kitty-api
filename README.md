@@ -44,7 +44,10 @@ The contents of these files will be in the following form:
 {
   "PORT": 3000
   "mongoURI": "mongoURI",
-  "securityKey": "saltedAndHashedKey"
+  "securityKey": "saltedAndHashedKey",
+  "protocol": "http or https",
+  "httpsKeyFile": "path/to/key/file/privkey.pem", (required only for https)
+  "httpsCertFile": "path/to/cert/file/cert.pem" (required only for https)
 }
 ```
 

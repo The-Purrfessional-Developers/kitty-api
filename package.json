@@ -2,10 +2,10 @@
   "name": "kitty-api",
   "scripts": {
     "server": "nodemon server",
-    "migrate": "NODE_ENV=migration; node ./migration/migration",
-    "production": "NODE_ENV=production; node server",
+    "migrate": "export NODE_ENV=migration; node ./migration/migration",
+    "production": "export NODE_ENV=production; node server",
     "genKey": "node security/genKey.js",
-    "example": "NODE_ENV=examples; node ./examples/request.js"
+    "example": "export NODE_ENV=examples; node ./examples/request.js"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",

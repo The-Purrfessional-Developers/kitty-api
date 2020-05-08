@@ -23,6 +23,4 @@ app.get("/", (req, res) => {
 // API routes
 app.use("/api/kitties", require("./routes/api/kitties"));
 
-const PORT = config.get("PORT");
-
-startServer(app, config, PORT);
+startServer(app, config);

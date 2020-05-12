@@ -4,7 +4,7 @@
     "server": "nodemon server",
     "migrate": "export NODE_ENV=migration; node ./migration/migration",
     "production": "export NODE_ENV=production; node server",
-    "genKey": "node security/genKey.js",
+    "genKey": "node security/genKey.js 20 10",
     "example": "export NODE_ENV=examples; node ./examples/request.js"
   },
   "dependencies": {

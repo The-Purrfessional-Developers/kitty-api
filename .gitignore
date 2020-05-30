@@ -6,3 +6,5 @@ config/default.json
 config/migration.json
 config/production.json
 config/examples.json
+
+.DS_Store

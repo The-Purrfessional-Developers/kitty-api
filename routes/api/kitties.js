@@ -16,7 +16,7 @@ router.get("/", auth, async (req, res) => {
     res.json(kitty);
   } catch (err) {
     console.error(err.message);
-    res.status(500).send("Server errror");
+    res.status(500).send("Server error 🙀");
   }
 });
 

@@ -10,7 +10,7 @@
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.2.6",
-    "express": "^4.17.1",
+    "express": "^4.20.0",
     "express-validator": "^6.4.0",
     "https": "^1.0.0",
     "mongoose": "^5.9.2"
